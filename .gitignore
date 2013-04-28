@@ -1,0 +1,9 @@
+# Node.js/npm stuff
+logs
+results
+
+npm-debug.log
+node_modules
+
+# Bower installs
+components
