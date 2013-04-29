@@ -1,6 +1,6 @@
 # Project ignores.
 lib
-dist
+build
 
 # Node.js/npm stuff
 logs
@@ -11,3 +11,4 @@ node_modules
 
 # Bower installs
 components
+vendor

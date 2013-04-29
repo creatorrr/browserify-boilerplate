@@ -2,13 +2,19 @@
   "name": "hermes",
   "version": "0.0.0",
 
+  "main": "hermes.js",
+
   "dependencies": {
-    "eventemitter2": "0.4.x"
+    "eventEmitter": "4.0.x"
   },
 
   "ignore": [
     "**/.*",
     "node_modules",
+
+    "lib",
+    "build",
+    "vendor",
     "components"
   ]
 }

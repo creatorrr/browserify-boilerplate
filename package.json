@@ -1,12 +1,19 @@
 {
-  "name": "hermes",
+  "name": "hermes-build",
   "version": "0.1.0",
 
   "devDependencies": {
     "grunt": "0.4.x",
 
-    "grunt-contrib": "*",
-    "grunt-git": "*"
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*",
+
+    "grunt-browserify": "*",
+    "grunt-bower-task": "git://github.com/creatorrr/grunt-bower-task.git"
   },
 
   "repository": {
