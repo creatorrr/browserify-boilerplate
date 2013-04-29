@@ -58,6 +58,9 @@ module.exports = taskManager = (grunt) ->
     # contrib-uglify config
     # (https://github.com/gruntjs/grunt-contrib-uglify/blob/master/README.md)
     uglify:
+      options:
+        banner: '/*! <%= config.bower.name %>-<%= config.bower.version %>
+         Built: <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       all:
         src:  'build/<%= config.bower.name %>-<%= config.bower.version %>.js'
         dest: 'build/<%= config.bower.name %>-<%= config.bower.version %>.min.js'
