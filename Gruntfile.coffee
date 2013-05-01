@@ -59,6 +59,10 @@ module.exports = taskManager = (grunt) ->
           # Format: 'path/to/file.js:alias'
           alias: [
             'vendor/eventEmitter/EventEmitter.js:EventEmitter'
+            'vendor/peerjs/dist/peer.js:Peer'
+
+            'vendor/modernizr/modernizr.js:modernizr'
+            'vendor/underscore/underscore.js:_'
           ]
 
     # contrib-uglify config

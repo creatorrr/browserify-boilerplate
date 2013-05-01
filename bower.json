@@ -5,13 +5,21 @@
   "main": "hermes.js",
 
   "dependencies": {
-    "eventEmitter": "4.0.x"
+    "eventEmitter": "4.0.x",
+    "peerjs": "0.2.x",
+
+    "modernizr": "*",
+    "underscore": "*"
   },
 
   "ignore": [
     "**/.*",
     "node_modules",
 
+    "package.json",
+    "bower.json",
+
+    "src",
     "lib",
     "build",
     "vendor",
