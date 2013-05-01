@@ -52,8 +52,18 @@ module.exports = taskManager = (grunt) ->
     # (https://github.com/jmreidy/grunt-browserify/blob/master/README.md)
     browserify:
       all:
-        src:  ['lib/**/*.js']
+        src:  ['lib/index.js']
         dest: 'build/<%= config.bower.name %>-<%= config.bower.version %>.js'
+        options:
+          # Add global aliases for browserify modules.
+          # Format: 'path/to/file.js:alias'
+          alias: [
+            'vendor/eventEmitter/EventEmitter.js:EventEmitter'
+            'vendor/peerjs/dist/peer.js:Peer'
+
+            'vendor/modernizr/modernizr.js:modernizr'
+            'vendor/underscore/underscore.js:_'
+          ]
 
     # contrib-uglify config
     # (https://github.com/gruntjs/grunt-contrib-uglify/blob/master/README.md)
