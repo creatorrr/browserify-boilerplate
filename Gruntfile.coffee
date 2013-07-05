@@ -57,13 +57,12 @@ module.exports = taskManager = (grunt) ->
         options:
           # Add global aliases for browserify modules.
           # Format: 'path/to/file.js:alias'
-          alias: [
-            'vendor/eventEmitter/EventEmitter.js:EventEmitter'
-            'vendor/peerjs/dist/peer.js:Peer'
+          # e.g.:   'modernizr/modernizr.js:modernizr'
+          alias: ("vendor/#{ alias }" for alias in [
 
-            'vendor/modernizr/modernizr.js:modernizr'
-            'vendor/underscore/underscore.js:_'
-          ]
+            'modernizr/modernizr.js:modernizr'
+            'underscore/underscore.js:_'
+          ])
 
     # contrib-uglify config
     # (https://github.com/gruntjs/grunt-contrib-uglify/blob/master/README.md)
@@ -93,7 +92,7 @@ module.exports = taskManager = (grunt) ->
     # (https://github.com/gruntjs/grunt-contrib-watch/blob/master/README.md)
     watch:
       files: 'src/**/*.coffee'
-      tasks: ['default']
+      tasks: ['do']
 
   # Load npm tasks.
   modules = getKeys (grunt.config 'config.package').devDependencies
@@ -107,7 +106,9 @@ module.exports = taskManager = (grunt) ->
   grunt.registerTask 'build',   ['browserify', 'uglify', 'copy']
 
   grunt.registerTask 'all',     ['setup', 'compile', 'build']
-  grunt.registerTask 'default', ['compile', 'build']
+  grunt.registerTask 'do', ['compile', 'build']
+
+  grunt.registerTask 'default', ['watch']
 
 # Utils
 getKeys = (obj) -> key for own key, value of obj
