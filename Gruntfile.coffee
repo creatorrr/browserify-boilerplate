@@ -92,7 +92,7 @@ module.exports = taskManager = (grunt) ->
     # (https://github.com/gruntjs/grunt-contrib-watch/blob/master/README.md)
     watch:
       files: 'src/**/*.coffee'
-      tasks: ['default']
+      tasks: ['do']
 
   # Load npm tasks.
   modules = getKeys (grunt.config 'config.package').devDependencies
@@ -106,7 +106,9 @@ module.exports = taskManager = (grunt) ->
   grunt.registerTask 'build',   ['browserify', 'uglify', 'copy']
 
   grunt.registerTask 'all',     ['setup', 'compile', 'build']
-  grunt.registerTask 'default', ['compile', 'build']
+  grunt.registerTask 'do', ['compile', 'build']
+
+  grunt.registerTask 'default', ['watch']
 
 # Utils
 getKeys = (obj) -> key for own key, value of obj

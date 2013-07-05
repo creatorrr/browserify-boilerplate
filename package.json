@@ -1,6 +1,7 @@
 {
   "name": "browserify-boilerplate",
   "version": "0.1.0",
+  "descriotion": "A simple boilerplate for writing js libraries using browerify.",
 
   "devDependencies": {
     "grunt": "0.4.x",
