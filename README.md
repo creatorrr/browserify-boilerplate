@@ -1,7 +1,7 @@
 browserify-boilerplate
 ======================
 
-A simple boilerplate for writing js libraries using browerify.
+A simple boilerplate for writing js libraries using [browserify](http://browserify.org/).
 
 Installation
 ------------
