@@ -1,5 +1,5 @@
 {
-  "name": "hermes-build",
+  "name": "project-build",
   "version": "0.1.0",
 
   "devDependencies": {
@@ -19,8 +19,16 @@
 
   "repository": {
     "type" : "git",
-    "url" : "http://github.com/creatorrr/hermes.git"
+    "url" : "http://github.com/creatorrr/js-boilerplate.git"
   },
 
-  "private": true
+  "scripts": {
+    "start": "node ./node_modules/grunt-cli/bin/grunt"
+  },
+
+  "private": true,
+
+  "engines": {
+    "node" : ">=0.8.0"
+  }
 }
