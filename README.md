@@ -1,18 +1,15 @@
-======================
 browserify-boilerplate
 ======================
 
 A simple boilerplate for writing js libraries using browerify.
 
-------------
 Installation
 ------------
 
-1. Fork / [download](http://github.com/creatorrr/browserify-boilerplate) the boilerplate and ```cd path/to/boilerplate```.
+1. [Fork](https://github.com/creatorrr/browserify-boilerplate/fork) / [download](https://github.com/creatorrr/browserify-boilerplate/archive/master.zip) the boilerplate and ```cd path/to/boilerplate```.
 2. ```npm install && npm run-script``` to setup the project.
 3. (Optional) ```npm install -g grunt-cli``` for using all grunt scripts.
 
------
 Usage
 -----
 
@@ -20,14 +17,12 @@ Usage
 2. ```npm start``` to begin
 3. ```npm test``` to run tests.
 
-------------
 Contributing
 ------------
 
 Pull requests welcome.
 Currently working on adding a test suite.
 
--------
 License
 -------
 
