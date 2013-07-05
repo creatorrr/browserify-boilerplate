@@ -1,13 +1,10 @@
 {
-  "name": "hermes",
+  "name": "project",
   "version": "0.0.0",
 
-  "main": "hermes.js",
+  "main": "project.js",
 
   "dependencies": {
-    "eventEmitter": "4.0.x",
-    "peerjs": "0.2.x",
-
     "modernizr": "*",
     "underscore": "*"
   },
