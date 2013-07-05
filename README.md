@@ -13,9 +13,9 @@ Installation
 Usage
 -----
 
-1. Place your code in the ```src/``` directory.
-2. ```npm start``` to begin
-3. ```npm test``` to run tests.
+1. Edit ```bower.json``` and ```Gruntfile.coffee```.
+2. Place your code in the ```src/``` directory.
+3. ```npm start``` to begin and ```npm test``` to run tests.
 
 Contributing
 ------------
