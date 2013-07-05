@@ -1,6 +1,7 @@
 {
-  "name": "project-build",
+  "name": "browserify-boilerplate",
   "version": "0.1.0",
+  "descriotion": "A simple boilerplate for writing js libraries using browerify.",
 
   "devDependencies": {
     "grunt": "0.4.x",
@@ -19,7 +20,7 @@
 
   "repository": {
     "type" : "git",
-    "url" : "http://github.com/creatorrr/js-boilerplate.git"
+    "url" : "http://github.com/creatorrr/browserify-boilerplate.git"
   },
 
   "scripts": {
@@ -28,8 +29,6 @@
 
     "test": "node ./node_modules/grunt-cli/bin/grunt test"
   },
-
-  "private": true,
 
   "engines": {
     "node" : ">=0.8.0"
