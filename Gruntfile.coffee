@@ -56,13 +56,10 @@ module.exports = taskManager = (grunt) ->
         dest: 'build/<%= config.bower.name %>-<%= config.bower.version %>.js'
         options:
           # Add global aliases for browserify modules.
-          # Format: 'path/to/file.js:alias'
-          # e.g.:   'modernizr/modernizr.js:modernizr'
-          alias: ("vendor/#{ alias }" for alias in [
-
-            'modernizr/modernizr.js:modernizr'
-            'underscore/underscore.js:_'
-          ])
+          alias: ("vendor/#{ path }:#{ alias }" for path, alias of {
+            'modernizr/modernizr.js': 'modernizr'
+            'underscore/underscore.js': '_'
+          })
 
     # contrib-uglify config
     # (https://github.com/gruntjs/grunt-contrib-uglify/blob/master/README.md)
